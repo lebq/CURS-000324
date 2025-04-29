@@ -1,0 +1,2 @@
+Crear y gestionar Deployements1. Incluye su escalado (+/-) vía comandos (kubectl 
+scale). 

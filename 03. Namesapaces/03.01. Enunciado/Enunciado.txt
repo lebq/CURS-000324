@@ -1,0 +1,2 @@
+Crear y gestionar namespaces para tres ambientes (dev, qa y prod), configurar dev 
+como predeterminado. 
