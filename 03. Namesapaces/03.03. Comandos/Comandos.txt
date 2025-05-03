@@ -1,0 +1,20 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+kubectl get ns
+kubectl create namespace dev
+kubectl create namespace qa
+kubectl create namespace prod
+kubectl config set-context --current --namespace=dev
+
+kubectl get namespace
+kubectl describe namespace dev
+kubectl describe namespace prod
+kubectl describe namespace qa
+
+kubectl logs my-pod-sqlserver -n my-namespace-pf
+
+kubectl get namespace
+kubectl delete namespace dev
+kubectl delete namespace prod
+kubectl delete namespace qa

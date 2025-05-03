@@ -1,0 +1,15 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+kubectl get namespace
+kubectl create namespace my-namespace-pf
+kubectl config set-context --current -namespace=my-namespace-pf
+
+kubectl run my-pod-sqlserver --image=mcr.microsoft.com/mssql/server:2019-latest --port=1433 --env="ACCEPT EULA=Y" --env="SA_PASSWORD=Lb4ld30n$"
+kubectl get pods
+kubectl describe pod my-pod-sqlserver
+kubectl logs my-pod-sqlserver
+kubectl delete pod my-pod-sqlserver
+
+kubectl create -f my-pod-postgresql.yml
+kubectl get pods
