@@ -1,0 +1,19 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+kubectl get all
+kubectl apply -f .\db-postgresql-v1-deployment.yml
+
+kubectl get all
+kubectl exec -it db-postgresql-v1-deployment-8dd989f9-f8v6t -- bash
+	psql -U postgres -W
+	123456
+	\l
+kubectl exec -it db-postgresql-v1-deployment-8dd989f9-s28ts -- bash
+	psql -U postgres -W
+	123456
+	\l
+
+kubectl get all
+kubectl scale deployment db-postgresql-v1-deployment --replicas=5
+kubectl scale deployment db-postgresql-v1-deployment --replicas=2

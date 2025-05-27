@@ -1,0 +1,28 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+kubectl get all
+kubectl get ns
+kubectl apply -f .\dbs-multi-namespace.yml
+
+kubectl get ns
+kubectl config set-context --current --namespace=namespace-1
+kubectl get all
+
+kubectl get ns
+kubectl config set-context --current --namespace=namespace-2
+kubectl get all
+
+minikube tunnel
+
+kubectl get all
+Postgres
+	kubectl exec -it postgres-84f979df99-6v8wn -- bash
+	psql -U postgres -W
+	123456
+	\l
+
+SQLServer
+	Server name: 127.0.0.1, 1433
+	Login: sa
+	Password: Lb4ld30n$

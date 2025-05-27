@@ -1,0 +1,19 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+kubectl get all
+kubectl apply -f .\db-sqlserver-secret.yml
+kubectl apply -f .\db-sqlserver-configmap.yml
+kubectl apply -f .\db-sqlserver-deployment.yml
+kubectl apply -f .\mynetcorewebapi7-deployment.yml
+
+kubectl get all
+minikube tunnel
+
+SQLServer
+	Server name: 127.0.0.1, 1433
+	Login: sa
+	Password: Lb4ld30n$
+
+Postman
+	http://127.0.0.1:8087/api/Productos

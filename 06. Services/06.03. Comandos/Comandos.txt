@@ -1,0 +1,18 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+kubectl get all
+kubectl apply -f .\miappdockernet7-deployment.yml
+kubectl apply -f .\miappdockernet7-service-nodeport.yml
+
+kubectl get all
+minikube service miappdockernet7-service-nodeport -n my-namespace-pf --url
+	http://127.0.0.1:57578/WeatherForecast
+
+kubectl apply -f .\miappdockernet7-service-loadbalancer.yml
+kubectl get all
+minikube tunnel
+
+kubectl get all
+minikube service miappdockernet7-service-loadbalancer -n my-namespace-pf --url
+	http://127.0.0.1:57886/WeatherForecast

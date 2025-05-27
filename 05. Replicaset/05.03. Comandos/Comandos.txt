@@ -1,0 +1,23 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+kubectl get all
+kubectl get pod
+
+kubectl apply -f .\db-postgresql-v1-replicaset.yml
+kubectl apply -f .\db-postgresql-v1-service.yml
+
+kubectl get all
+kubectl get svc db-postgresql-v1-service
+minikube tunnel
+
+kubectl get all
+kubectl scale replicaset db-postgresql-v1-replicaset --replicas=3
+kubectl scale replicaset db-postgresql-v1-replicaset --replicas=2
+
+kubectl get all
+kubectl get replicaset
+kubectl get service
+kubectl delete service db-postgresql-v1-service
+kubectl delete replicaset db-postgresql-v1-replicaset 
+kubectl get all
