@@ -1,0 +1,14 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+minikube addons enable ingress
+
+kubectl apply -f .\kbs-ingress-gateway.yml
+kubectl config set-context --current --namespace=demo
+minikube tunnel
+
+kubectl port-forward --namespace ingress-nginx svc/ingress-nginx-controller 8080:80
+
+kubectl get all
+curi http://localhost:8080/web1
+curi http://localhost:8080/web2
