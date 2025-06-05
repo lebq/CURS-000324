@@ -1,0 +1,13 @@
+*********************************************************************************
+Comandos
+*********************************************************************************
+minikube logs
+minikube addons list
+minikube profile list
+minikube start
+minikube status
+minikube stop
+minikube start --memory=3000 --cpus=2
+minikube image list
+minikube ip
+minikube tunnel
